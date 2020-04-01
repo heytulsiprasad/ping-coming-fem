@@ -8,6 +8,14 @@
 
 html {
     font-size: 125%;    // 20px
+
+    @include respond(phone) {
+        font-size: 100%;
+    }
+
+    @include respond(phone-small) {
+        font-size: 80%;
+    }
 }
 
 body {

@@ -1,17 +1,34 @@
 .container {
     display: flex;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .spacer {
-    flex-basis: 20rem;
+    flex-grow: 1;
 }
 
 .content {
     display: flex;
+    flex-grow: 3;
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
 
     margin-top: 2.5rem;
     margin-bottom: 2rem;
+
+    @include respond(tablet) {
+        padding: 2rem 2rem;
+    }
+
+    @include respond(phone) {
+        justify-content: space-between;
+    }
+
+    //
+    // border: 1px solid orange;
+
+    // & > * {
+    //     border: 1px solid blue;
+    // }
 }
