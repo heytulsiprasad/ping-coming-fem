@@ -1,0 +1,16 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 125%;    // 20px
+}
+
+body {
+    box-sizing: border-box;
+    font-family: "Libre Franklin", sans-serif;
+}
